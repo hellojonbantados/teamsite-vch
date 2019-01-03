@@ -1,0 +1,117 @@
+#myBtnContainer {
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter__tab-btn {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+}
+
+.filter {
+    list-style-type: none;
+}
+
+.underbar {
+    width: 0;
+    height: 5px;
+    background: rgba(100,100,200,0);
+    //left: -50px;
+    top: .125rem;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.filter-tab {
+    float: left;
+    margin: 0 .25rem;
+    padding: 1rem .75rem;
+    text-align: center;
+    
+    &:hover {
+        // color: red;
+        transition: .5s ease-in;
+    }
+
+    &:hover ~ #video {
+        color: rgb(219, 139, 46);
+    }
+    cursor: pointer;
+}
+
+.filter__category {
+    transition: .25s ease-in;
+
+    &:hover ~ .underbar {
+        width: 100%;
+    }
+
+    &:active, 
+    &:visited {
+        width: 100%;
+    }
+}
+
+//category colours
+
+#elearning {
+    
+    &:hover {
+        color: $accent-elearning;
+
+        &~ .underbar {
+        background: $accent-elearning;
+        }
+    }
+    
+    &:visited {
+        color: $accent-elearning;
+
+        &~ .underbar {
+            background: $accent-elearning;
+        }
+    }
+}
+
+#motion:hover {
+    color: $accent-motion;
+
+    &~ .underbar {
+        background: $accent-motion;
+    }
+}
+
+#new-media:hover {
+    color: $accent-new-media;
+
+    &~ .underbar {
+        background: $accent-new-media;
+    }
+}
+
+#print:hover {
+    color: $accent-print;
+
+    &~ .underbar {
+        background: $accent-print;
+    }
+}
+
+#web:hover {
+    color: $accent-web;
+
+    &~ .underbar {
+        background: $accent-web;
+    }
+}
+
+
+
+
+.projects--category-description {
+    text-align: center;
+    padding-bottom: .75rem;
+}
