@@ -1,3 +1,17 @@
+// Typography Variables
+@font-face {
+    font-family: 'Pricedown';
+    src: url('assets/pricedown/pricedown_bl-webfont.woff2') format('woff2'),
+         url('assets/pricedown/pricedown_bl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$pricedown: 'Pricedown', 'Proxima Nova', sans-serif;
+$leckerli: 'Leckerli One', cursive;
+
+$main-font: 'Proxima Nova', 'Lato', sans-serif;
+
 //Colour Variables
 $colour-dark-grey: #4c4c4c;
 $colour-white: #fff;
@@ -31,9 +45,3 @@ $accent-print: #e0347a;
 
 //Web colour pallette
 $accent-web: #8a488c;
-
-
-
-// Typography Variables
-$main-font: 'Proxima Nova', 'Lato', sans-serif;
-

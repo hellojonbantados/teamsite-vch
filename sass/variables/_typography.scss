@@ -1,7 +1,26 @@
+// Index
+
+.index--title {
+	position: absolute;
+	top: 30%;
+
+	h1 {
+		font-family: $pricedown;
+		font-size: 5rem;
+		line-height: 1em;
+		text-shadow: -0.02em 0.02em 0px #FFFFFF, -0.1em 0.1em 0px #1C6EA4;
+	}
+
+	h2 {
+		font-family: $leckerli;
+		padding-top: 0.5em;
+		font-size: 1.75rem;
+	}
+}
 
 // Featured Project Title
 .project__name {
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     line-height: .5rem;
     padding-top: 1rem;
     font-weight: 600;
@@ -15,12 +34,12 @@
 }
 
 // Text styling for project specific pages
-.project--header {
+.project--header, .service--header {
     font-size: 1.5rem;
     color: $colour-dark-grey;
 }
 
-.project--subheader {
+.project--subheader, .service--subheader  {
     font-size: 1.125rem;
 }
 
@@ -38,4 +57,32 @@
     font-style: italic;
     font-size: .95rem;
     font-weight: 200;
+}
+
+// Services
+
+h2 .fas {
+/*	display: block;
+	margin-bottom: 0.5em;*/
+	margin-right: 0.5em;
+}
+
+.elearn {
+	h2 { color: $accent-elearning; }
+}
+
+.newmedia {
+	h2 { color: $accent-new-media; }
+}
+
+.web {
+	h2 { color: $accent-web; }
+}
+
+.motion {
+	h2 { color: $accent-motion; }
+}
+
+.print {
+	h2 { color: $accent-print; }
 }
