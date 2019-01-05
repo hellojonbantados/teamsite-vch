@@ -1,0 +1,35 @@
+@import "../sass/variables/variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #efefef !important;
+    font-family: $main-font !important;
+    font-size: 16px;
+    color: $colour-dark-grey;
+}
+
+h1 {
+    font-family: $main-font;
+    color: $colour-dark-grey;
+}
+
+h2 {
+    color: $colour-dark-grey;
+}
+
+h3 {
+    color: $colour-dark-grey;
+}
+
+p {
+    font-family: $main-font;
+    color: $colour-dark-grey;
+}
+
+.space {
+    height: 4rem;
+}

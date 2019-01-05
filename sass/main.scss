@@ -1,0 +1,171 @@
+@import "../sass/base/base.scss";
+@import "../sass/variables/variables.scss";
+@import "../sass/variables/typography";
+@import "../sass/layout/navigation";
+@import "../sass/layout/filter.scss";
+@import "../sass/layout/thumbnail";
+@import "../sass/layout/carousel.scss";
+@import "../sass/layout/video.scss";
+@import "../sass/layout/footer";
+//Media Quieries - TBA
+//header container on the home page
+.header {
+	width: 100%;
+	// background-image: url(../assets/hero-test.gif);
+	clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 85vh);
+	background-size: cover;
+	background-position: bottom;
+	position: relative;
+}
+
+.hero--video {
+	width: 100%;
+	position: relative;
+	background-position: bottom;
+}
+
+/*.hero--video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(placeholder.jpg) no-repeat;
+	background-size: cover;
+}*/
+//Learning technologies logo
+.header__logo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 20vw;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	z-index: 1000;
+}
+
+main {
+    padding-top: 8rem;
+}
+
+//Work With Us CTA
+.project--work-with-us {
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #f58371;
+	padding: 0 2rem;
+}
+
+.project--work-with-us .col-sm-12 {
+	display: block !important;
+}
+
+//project thumbnails
+.projects__featured {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	text-align: left;
+	clear: left;
+}
+
+.container {
+	margin-top: 1.5rem;
+}
+
+.col-sm-6 > .content {
+	padding: 1.5rem;
+}
+
+.container > .space {
+	height: 3rem;
+}
+
+#content {
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.tag {
+	padding: 1rem 0;
+	color: #f14f35;
+
+	&a:link {
+		color: #f14f35;
+	}
+
+	&:active {
+		color: #f14f35;
+	}
+}
+
+.button--site {
+	padding: 1rem 3rem;
+	background-color: #fff;
+	border: 3px solid #f14f35;
+	color: #f14f35;
+	text-align: center;
+	border-radius: 5px;
+
+	&:hover {
+		background-color: #f14f35;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+//Work With Us Block
+.work-with-us {
+	text-align: center;
+	clear: right;
+	display: block;
+	padding: 1.25rem 0;
+}
+
+.button--form {
+	position: relative;
+	display: inline-block;
+	margin-top: 0.5rem;
+	padding: 1rem 2rem;
+	background-color: #f14f35;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+
+	&:hover {
+		background-color: #c63e30;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.row--content {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.faq {
+	margin-top: 1.25rem;
+}
+
+.button--faq {
+	text-decoration: underline;
+	color: #f14f35;
+
+	&:hover {
+		color: #c63e30;
+	}
+}
+
+.hidden {
+	display: none;
+}
