@@ -37,16 +37,41 @@ p {
   font-style: normal; }
 .index--title {
   position: absolute;
-  top: 30%; }
+  top: 25%;
+  left: 2em;
+  transform: rotate(-10deg); }
   .index--title h1 {
     font-family: "Pricedown", "Proxima Nova", sans-serif;
     font-size: 5rem;
     line-height: 1em;
-    text-shadow: -0.02em 0.02em 0px #FFFFFF, -0.1em 0.1em 0px #1C6EA4; }
+    color: #f98e73;
+    text-shadow: -0.03em 0.03em 0px #FFFFFF, -0.1em 0.1em 0px #e0347a; }
   .index--title h2 {
     font-family: "Leckerli One", cursive;
     padding-top: 0.5em;
-    font-size: 1.75rem; }
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    text-shadow: -0.1em 0.1em 0px #8a488c; }
+
+.index--seemore {
+  position: absolute;
+  top: 35%;
+  right: 5em;
+  background: #FFFFFF;
+  height: 10em;
+  width: 10em;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%; }
+  .index--seemore .text {
+    display: inline;
+    color: #4c4c4c;
+    font-weight: bold; }
+    .index--seemore .text .far {
+      font-size: 1.5em;
+      margin-left: -5px;
+      margin-top: 5px; }
 
 .project__name {
   font-size: 1.25rem;
@@ -59,11 +84,11 @@ p {
   line-height: 1rem;
   font-size: .85rem; }
 
-.project--header, .service--header {
+.project--header, .service--header, .team--header {
   font-size: 1.5rem;
   color: #4c4c4c; }
 
-.project--subheader, .service--subheader {
+.project--subheader, .service--subheader, .team--subheader {
   font-size: 1.125rem; }
 
 .project--description {
@@ -98,6 +123,12 @@ h2 .fas {
 
 .print h2 {
   color: #e0347a; }
+
+.team--icon {
+  width: auto;
+  height: 200px;
+  background-color: #777;
+  margin-bottom: 1.5em; }
 
 .navigation__checkbox {
   display: none; }
@@ -356,10 +387,10 @@ ol.carousel-indicators li.active {
 
 .header {
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 85vh);
   background-size: cover;
   background-position: bottom;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .hero--video {
   width: 100%;

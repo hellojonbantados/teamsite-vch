@@ -12,10 +12,11 @@
 .header {
 	width: 100%;
 	// background-image: url(../assets/hero-test.gif);
-	clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 85vh);
+	//clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 85vh);
 	background-size: cover;
 	background-position: bottom;
 	position: relative;
+	overflow: hidden;
 }
 
 .hero--video {

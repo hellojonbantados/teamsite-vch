@@ -2,19 +2,48 @@
 
 .index--title {
 	position: absolute;
-	top: 30%;
+	top: 25%;
+	left: 2em;
+	transform: rotate(-10deg);
 
 	h1 {
 		font-family: $pricedown;
 		font-size: 5rem;
 		line-height: 1em;
-		text-shadow: -0.02em 0.02em 0px #FFFFFF, -0.1em 0.1em 0px #1C6EA4;
+		color: #f98e73;
+		text-shadow: -0.03em 0.03em 0px #FFFFFF, -0.1em 0.1em 0px #e0347a;
 	}
-
 	h2 {
 		font-family: $leckerli;
 		padding-top: 0.5em;
 		font-size: 1.75rem;
+		color: #FFFFFF;
+		text-shadow: -0.1em 0.1em 0px #8a488c;
+	}
+}
+
+.index--seemore {
+	position: absolute;
+	top: 35%;
+	right: 5em;
+	background: #FFFFFF;
+	height: 10em;
+	width: 10em;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 50%;
+
+	.text {
+		display: inline;
+		color: $colour-dark-grey;
+		font-weight: bold;
+
+		.far {
+			font-size: 1.5em;
+			margin-left: -5px;
+			margin-top: 5px;
+		}
 	}
 }
 
@@ -34,12 +63,12 @@
 }
 
 // Text styling for project specific pages
-.project--header, .service--header {
+.project--header, .service--header, .team--header {
     font-size: 1.5rem;
     color: $colour-dark-grey;
 }
 
-.project--subheader, .service--subheader  {
+.project--subheader, .service--subheader, .team--subheader  {
     font-size: 1.125rem;
 }
 
@@ -85,4 +114,13 @@ h2 .fas {
 
 .print {
 	h2 { color: $accent-print; }
+}
+
+// Team
+
+.team--icon {
+	width: auto;
+	height: 200px;
+	background-color: $color-grey-dark;
+	margin-bottom: 1.5em;
 }
