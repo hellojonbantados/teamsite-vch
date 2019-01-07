@@ -56,6 +56,26 @@ main {
     padding-top: 8rem;
 }
 
+.index--title {
+	position: absolute;
+	top: 25%;
+	left: 2em;
+	transform: rotate(-10deg);
+}
+
+.index--seemore {
+	position: absolute;
+	top: 35%;
+	right: 5em;
+	background: #70cee4;
+	height: 10em;
+	width: 10em;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
 //Work With Us CTA
 .project--work-with-us {
 	text-align: center;
@@ -64,8 +84,13 @@ main {
 	padding: 0 2rem;
 }
 
+// If CTA is smaller
 .project--work-with-us .col-sm-12 {
 	display: block !important;
+
+	.content {
+		padding: 1.5em 1em;
+	}
 }
 
 //project thumbnails
@@ -170,3 +195,26 @@ main {
 .hidden {
 	display: none;
 }
+
+// Service
+
+@media (max-width: 768px) {
+  .service .col-sm-4 {
+	  flex: 0 0 50%;
+	  max-width: 50%;
+  }
+
+  .team .col-sm-3 {
+	flex: 0 0 50%;
+	max-width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  .service .col-sm-4 {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+  }
+}
+
+// Team

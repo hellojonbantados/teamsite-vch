@@ -15,10 +15,12 @@ body {
 h1 {
     font-family: $main-font;
     color: $colour-dark-grey;
+	padding-bottom: 1em;
 }
 
 h2 {
     color: $colour-dark-grey;
+	padding-bottom: 0.25em;
 }
 
 h3 {
@@ -32,4 +34,15 @@ p {
 
 .space {
     height: 4rem;
+}
+
+.row {
+
+	.col-sm-3 {
+		padding: 2em;
+	}
+	.col-sm-4 {
+		padding: 1em;
+	}
+
 }
